@@ -1,0 +1,24 @@
+<div class="div-table">
+    <div class="div-header">
+        <div class="div-cell">Brand</div>
+        <div class="div-cell">Model</div>
+        <div class="div-cell">Pret</div>
+        <div class="div-cell">Km</div>
+        <div class="div-cell">View</div>
+        <div class="div-cell">Delete</div>
+        
+    </div>
+    <div class="div-row" *ngFor="let vehicle of vehicles">
+        <div class="div-cell">{{vehicle.brand}}</div>       
+        <div class="div-cell">{{vehicle.model}}</div>
+        <div class="div-cell">{{vehicle.pret}}</div>
+        <div class="div-cell">{{vehicle.km}}</div>
+        <div class="div-cell">
+            <button [routerLink]="['/vehicles',vehicle.id]">View details</button>
+        </div>
+        <div class="div-cell">
+            <button (click)="deleteCar(vehicle.id)">Delete</button>
+        </div>        
+    </div>
+</div>
+        

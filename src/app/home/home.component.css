@@ -1,0 +1,33 @@
+.row {
+    height: 100%;
+    display:flex;
+  }
+  p{
+    font-size: 100px;
+  }
+  .box {
+    display:flex;
+    width:50%;
+    background-color: #851d41;
+    text-align:center;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    cursor:pointer;
+  }
+  #left{
+    background-color: #851d41;
+  }
+  #left:hover{
+    background-color: #db3056;
+  }
+  
+  #right {
+  
+    background-color: #ff6464;
+  }
+  #right:hover{
+    background-color: #ffb99a;
+  }
+  
+  

@@ -1,0 +1,17 @@
+<button (click)='showTrucks()'>Show the list of trucks</button>
+<table>
+    <thead>
+        <tr>
+            <th>Brand</th>
+            <th>Tonaj</th>
+            <th>View details</th>           
+        </tr>
+    </thead>
+    <tr *ngFor='let truck of trucks'>
+        <td>{{truck.brand}}</td>
+        <td>{{truck.tonaj}}</td>
+        <td>
+            <button (click)='open(truck.id)'>View details</button>
+        </td>
+    </tr>
+</table>

@@ -1,0 +1,16 @@
+ul{
+    width:100%;
+    display:flex;
+    background-color: grey;
+}
+  li{
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    cursor: pointer;
+  }
+  
+  li:hover {
+    background-color: #111;
+  }

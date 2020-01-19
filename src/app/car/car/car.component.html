@@ -1,0 +1,6 @@
+<ul>
+    <li (click)="displayCars()">Available cars</li>
+    <li (click)="displayAddCar()">Add a new car</li>
+</ul>
+<pm-vehicles *ngIf="showCars"></pm-vehicles>
+<pm-add-car *ngIf="addCar"></pm-add-car>
