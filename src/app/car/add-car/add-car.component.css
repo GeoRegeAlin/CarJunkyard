@@ -1,3 +1,16 @@
 button{
-    background-color: grey;
+    margin-top: 20px;
+    background-color: #142850;
+    color:white;
+    border-radius: 8px;
+    justify-content: center;
+    height: 50px;
+    width: 150px;
+}
+div{
+    width: 50%;
+    height: 50px;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
 }

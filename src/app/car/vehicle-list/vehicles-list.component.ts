@@ -18,13 +18,10 @@ export class VehiclesListComponent implements OnInit{
 
     }
     ngOnInit():void{
-        this.mySub=this.vehicleService.getVehicles().subscribe({
-            next:vehicles=>{
-                this.vehicles=vehicles
-            }
-         })   
+        this.mySub=this.vehicleService.getVehicles().subscribe(vehicles=>this.vehicles=vehicles)   
     }
     deleteCar(id:number):void{
         this.vehicleService.deleteCar(id).subscribe();
+        this.vehicles=this.vehicles.filter(item=>item.id!=id)
     }
 }  

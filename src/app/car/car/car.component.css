@@ -1,12 +1,14 @@
-ul{
+div{
     width:100%;
     display:flex;
-    background-color: grey;
+    background-color: #2d132c;
 }
   li{
-    display: flex;
+    display: inline;
+    width: 50%;
     color: white;
     text-align: center;
+    justify-content: center;
     padding: 14px 16px;
     cursor: pointer;
   }

@@ -1,18 +1,24 @@
 .div-table{
     display:table;
     width: 100%;
-    height: 100%;
+    height: 90%;
 }
 .div-row{
     display: table-row;
+    background-color: #ee4540;
 }
 .div-header{
     display:table-header-group;
-    background-color: grey;
+    background-color: #801336;
     text-align: center;
 }
 .div-cell{
     display: table-cell;
     text-align: center;
     vertical-align: middle;
+}
+button{
+    background-color: #142850;
+    color:white;
+    border-radius: 8px;
 }
